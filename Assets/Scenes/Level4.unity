@@ -13033,7 +13033,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0045776367, y: -0.009154856}
+  m_Offset: {x: -0.0014743805, y: -0.02030854}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13044,7 +13044,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8809814, y: 0.31690216}
+  m_Size: {x: 1.8685875, y: 0.24569497}
   m_EdgeRadius: 0
 --- !u!61 &950500350
 BoxCollider2D:
@@ -13059,7 +13059,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.083839625}
+  m_Offset: {x: -0.009462357, y: 0.091073096}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13070,7 +13070,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6938019, y: 0.026123822}
+  m_Size: {x: 1.6837959, y: 0.054517746}
   m_EdgeRadius: 0
 --- !u!4 &1024175210 stripped
 Transform:
@@ -18174,6 +18174,18 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'Level : 4'
       objectReference: {fileID: 0}
+    - target: {fileID: 2374124666887681744, guid: 90f6a813ca1bbfe4a9d64c3bbafeee3c, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374124666887681744, guid: 90f6a813ca1bbfe4a9d64c3bbafeee3c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.972549
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374124666887681744, guid: 90f6a813ca1bbfe4a9d64c3bbafeee3c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2374124666887681746, guid: 90f6a813ca1bbfe4a9d64c3bbafeee3c, type: 3}
       propertyPath: m_Name
       value: Levels Text
@@ -18872,7 +18884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0.972549, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18892,7 +18904,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Bananas : 0'
+  m_Text: 'Fruits : 0'
 --- !u!222 &1624093156
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19291,6 +19303,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2460744055067294033, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460744055067294039, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -19963,7 +19979,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.083839625}
+  m_Offset: {x: -0.007167816, y: 0.06694496}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -19974,7 +19990,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6938019, y: 0.026123822}
+  m_Size: {x: 1.6979752, y: 0.052550912}
   m_EdgeRadius: 0
 --- !u!61 &2113375935
 BoxCollider2D:
@@ -19989,7 +20005,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0045776367, y: -0.009154856}
+  m_Offset: {x: -0.0015945435, y: -0.01551199}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -20000,7 +20016,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8809814, y: 0.31690216}
+  m_Size: {x: 1.8728638, y: 0.2757194}
   m_EdgeRadius: 0
 --- !u!95 &2113375936
 Animator:
