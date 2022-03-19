@@ -18,7 +18,12 @@ public class finish : MonoBehaviour
         if(col.gameObject.name == "player" && !levelCompleted){
             finishSound.Play();
             levelCompleted = true;
-            
+
+            //set the Last Level reach 
+            int level = SceneManager.GetActiveScene().buildIndex;
+
+            if (!PlayerPrefs.HasKey("MaxLevel") || PlayerPrefs.GetInt("MaxLevel") <=level)
+                PlayerPrefs.SetInt("MaxLevel", level+1);
             //wait 2 seconds to go to next level 
             Invoke("LevelComplet", 2f);
 
@@ -27,9 +32,10 @@ public class finish : MonoBehaviour
 
     }
 
-    private void LevelComplet(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
+     private void LevelComplet(){
+        int nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(nextLevel);
+       
     }
 
 }
