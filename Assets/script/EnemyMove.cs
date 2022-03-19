@@ -25,9 +25,9 @@ public class EnemyMove : MonoBehaviour
         }
         transform.position = Vector2.MoveTowards(transform.position, waypoints[currentWaypointIndex].transform.position, Time.deltaTime * speed);
 
-        if(currentWaypointIndex == 1){
+        if(transform.position.x>waypoints[currentWaypointIndex].transform.position.x){
             sprite.flipX = false;
-        }else if(currentWaypointIndex == 0){
+        }else {
             sprite.flipX = true;
         }
     }
