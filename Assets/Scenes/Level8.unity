@@ -1415,6 +1415,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2460744055067294039, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 432271910}
+    - target: {fileID: 2460744055067294039, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460744055067294039, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RestartGame1, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
 --- !u!224 &432271908 stripped
@@ -1422,6 +1434,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2460744055067294033, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
   m_PrefabInstance: {fileID: 432271907}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &432271909 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2460744055067294032, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
+  m_PrefabInstance: {fileID: 432271907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &432271910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432271909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c29d546e6c5aa499e0a6b91e08f8aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &456542088 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4552402778861601633, guid: e1855ef9808de2141a6f43a733932762, type: 3}
@@ -15630,7 +15659,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.395875
+  orthographic size: 4.220736
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -15654,7 +15683,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -239.45001, y: 33.18, z: -10}
+  m_LocalPosition: {x: -252.65, y: 33.18, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -36042,7 +36071,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Bananas : 0'
+  m_Text: 
 --- !u!222 &1624093156
 CanvasRenderer:
   m_ObjectHideFlags: 0

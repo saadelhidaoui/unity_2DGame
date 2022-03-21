@@ -1802,7 +1802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSound: {fileID: 410781618}
-  GoLevel: 7
+  GoLevel: 10
 --- !u!1 &411412542
 GameObject:
   m_ObjectHideFlags: 0
@@ -5786,7 +5786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSound: {fileID: 1382328057}
-  GoLevel: 6
+  GoLevel: 9
 --- !u!114 &1382328059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6871,7 +6871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSound: {fileID: 1528463562}
-  GoLevel: 9
+  GoLevel: 12
 --- !u!82 &1528463562
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7345,7 +7345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSound: {fileID: 1591114972}
-  GoLevel: 10
+  GoLevel: 13
 --- !u!82 &1591114972
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7830,7 +7830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSound: {fileID: 1744950999}
-  GoLevel: 8
+  GoLevel: 11
 --- !u!82 &1744950999
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8769,7 +8769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSound: {fileID: 1856033741}
-  GoLevel: 11
+  GoLevel: 1
 --- !u!1 &1876418616
 GameObject:
   m_ObjectHideFlags: 0
@@ -9523,7 +9523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSound: {fileID: 2065496694}
-  GoLevel: 13
+  GoLevel: 3
 --- !u!1 &2081670524
 GameObject:
   m_ObjectHideFlags: 0

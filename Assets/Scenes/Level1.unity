@@ -243,6 +243,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7794712601639612960, guid: 8811903a8ef6e204d80b669e28de6c49, type: 3}
   m_PrefabInstance: {fileID: 7794712601897704783}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &328301947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328301949}
+  - component: {fileID: 328301948}
+  m_Layer: 0
+  m_Name: Save Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &328301948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328301947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 813127e007f42c340bd9e3c64b490081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSave:
+    saveName: save1
+    position: {x: 0, y: 0, z: 0}
+    itemsCollected: 0
+--- !u!4 &328301949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328301947}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -122.30234, y: 1.8550458, z: -1.3651199}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &355013928
 GameObject:
   m_ObjectHideFlags: 0
@@ -11802,7 +11849,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.948456
+  orthographic size: 4.220736
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -11826,7 +11873,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -137.97752, y: 1, z: -10}
+  m_LocalPosition: {x: -149.14, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19725,7 +19772,7 @@ GameObject:
   - component: {fileID: 1624093155}
   m_Layer: 5
   m_Name: Bananas Text
-  m_TagString: Untagged
+  m_TagString: FruitText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19782,7 +19829,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Bananas : 0'
+  m_Text: 
 --- !u!222 &1624093156
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20151,6 +20198,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8811903a8ef6e204d80b669e28de6c49, type: 3}
+--- !u!1 &2138385559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2460744055067294032, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
+  m_PrefabInstance: {fileID: 2460744054405304090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2138385565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138385559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9447a080d58b5d74da317a5253fbb187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &274039187866738628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20313,6 +20377,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2460744055067294033, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460744055067294039, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2138385565}
+    - target: {fileID: 2460744055067294039, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460744055067294039, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RestartGame, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038019717697509933, guid: af24de1429c63d64c83f766fe796de0a, type: 3}
+      propertyPath: GoLevel
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

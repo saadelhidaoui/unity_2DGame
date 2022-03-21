@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class finish : MonoBehaviour
@@ -12,6 +13,7 @@ public class finish : MonoBehaviour
     private void Start()
     {
         finishSound = GetComponent<AudioSource>();
+
     }
 
     private void OnTriggerEnter2D(Collider2D col){
@@ -24,8 +26,10 @@ public class finish : MonoBehaviour
 
             if (!PlayerPrefs.HasKey("MaxLevel") || PlayerPrefs.GetInt("MaxLevel") <=level)
                 PlayerPrefs.SetInt("MaxLevel", level+1);
+
             //wait 2 seconds to go to next level 
             Invoke("LevelComplet", 2f);
+
 
 
         }
@@ -35,7 +39,7 @@ public class finish : MonoBehaviour
      private void LevelComplet(){
         int nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(nextLevel);
-       
+
     }
 
 }
