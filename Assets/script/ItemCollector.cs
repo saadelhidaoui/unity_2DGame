@@ -1,23 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
-    private int bananas;
+    private int bananas = 0;
     [SerializeField] private Text bananasText;
     [SerializeField] private AudioSource collectSound;
 
 
  private void OnTriggerEnter2D(Collider2D collision){
      if(collision.gameObject.CompareTag("banana")){
-         bananasText.text = "Fruits: " + bananas;
          Destroy(collision.gameObject);
          bananas++;
-         collectSound.Play();
+         if(PlayerPrefs.GetInt("Sound")==1)collectSound.Play();
          bananasText.text = "Fruits: " + bananas;
-
      }
  }
 }

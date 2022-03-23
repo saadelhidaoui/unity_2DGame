@@ -9,8 +9,8 @@ public class MusicClass: MonoBehaviour
     private AudioSource _audioSource;
     private GameObject [] other;
     private bool NotFirst;
-    
 
+    
     private void Awake(){
             other=GameObject.FindGameObjectsWithTag("Music");
 
@@ -20,7 +20,7 @@ public class MusicClass: MonoBehaviour
                     NotFirst=true;
                 }
             }
-            if(NotFirst==true){
+            if(NotFirst==true && gameObject!=null){
                 Destroy(gameObject);
             }
             DontDestroyOnLoad(transform.gameObject);
@@ -29,7 +29,7 @@ public class MusicClass: MonoBehaviour
 
     
     public void PlayMusic(){
-        if(_audioSource.isPlaying) return;
+        if(_audioSource.isPlaying||PlayerPrefs.GetInt("Music")==0) return;
         _audioSource.Play();
       
     }

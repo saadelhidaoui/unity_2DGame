@@ -8,7 +8,9 @@ TagManager:
   - trap
   - LevelText
   - Music
-  - FruitText
+  - BlackScreen
+  - MusicBG
+  - SoundEffect
   layers:
   - Default
   - TransparentFX

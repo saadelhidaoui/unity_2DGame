@@ -19,7 +19,7 @@ public class PlayerLife : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision){
 
         if(collision.gameObject.CompareTag("trap")){
-            dyingSound.Play();
+           if(PlayerPrefs.GetInt("Sound")==1) dyingSound.Play();
             Die();
         }
     }

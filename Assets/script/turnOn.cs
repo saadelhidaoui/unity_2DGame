@@ -12,7 +12,7 @@ public class turnOn : MonoBehaviour
         
         anim=GetComponent<Animator>();
         Invoke("TurnOn",4f);        
-        Debug.Log("hello world");
+        
     }
     private void TurnOn(){
         anim.SetTrigger("On");

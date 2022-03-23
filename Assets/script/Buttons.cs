@@ -13,6 +13,7 @@ public class Buttons : MonoBehaviour
    
     private void Start()
     {
+        if (!PlayerPrefs.HasKey("MaxLevel")) PlayerPrefs.SetInt("MaxLevel", 1);
         
         maxLevel= PlayerPrefs.GetInt("MaxLevel");
 
@@ -20,8 +21,7 @@ public class Buttons : MonoBehaviour
         textButton=button.GetComponentInChildren<Text>();
         text = textButton.text;
         if (int.Parse(text)<=maxLevel) enableButton();
-        else
-        disableButton();
+        else disableButton();
     }
     //disable buttons
     public void disableButton()
